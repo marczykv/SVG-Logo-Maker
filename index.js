@@ -40,7 +40,7 @@ import("inquirer").then((inquirer) => {
 // svg file size 
         const svg = `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
                         ${shape.render()}
-                        <text x="50%" y="50%" font-size="60" fill="${userInput.textColor}" dominant-baseline="middle" text-anchor="middle">${userInput.text}</text>
+                        <text x="50%" y="50%" font-size="50" fill="${userInput.textColor}" dominant-baseline="middle" text-anchor="middle">${userInput.text}</text>
                     </svg>`;
 // creates file type svg 
         fs.writeFileSync("logo.svg", svg);
